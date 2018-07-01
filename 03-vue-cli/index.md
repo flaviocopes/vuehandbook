@@ -32,7 +32,11 @@ Its main goal is to make sure all the tools you need are working along, to perfo
 
 It can perform an initial project setup and scaffolding.
 
-It's a flexible tool: once you create a project with the CLI, you can go and tweak the configuration, without having to _eject_ your application (like you'd do with `create-react-app`). You can configure anything and still be able to upgrade with ease.
+It's a flexible tool: once you create a project with the CLI, you can go and tweak the configuration, without having to *eject* your application (like you'd do with `create-react-app`).
+
+> When you eject from create-react-app you can update and tweak what you want, but you can't rely on the cool features that create-react-app provides
+
+You can configure anything and still be able to upgrade with ease.
 
 After you create and configure the app, it acts as a runtime dependency tool, built on top of webpack.
 
@@ -50,7 +54,7 @@ The cool thing is that it's an interactive process. You need to pick a preset. B
 
 ![](/vue-cli/vue-cli-presets.png)
 
-I'm going to press the down arrow ⬇️ and manually choose the features I want:
+I'm going to press the down arrow ⬇️  and manually choose the features I want:
 
 ![](/vue-cli/vue-cli-choose-features.png)
 
@@ -131,7 +135,9 @@ Presets are stored in the `.vuejs` file in your home directory. Here's mine afte
         "@vue/cli-plugin-babel": {},
         "@vue/cli-plugin-eslint": {
           "config": "prettier",
-          "lintOn": ["save"]
+          "lintOn": [
+            "save"
+          ]
         },
         "@vue/cli-plugin-unit-jest": {}
       },
@@ -173,7 +179,9 @@ A preset can be stored in GitHub (or on other services) by creating a repository
     "@vue/cli-plugin-babel": {},
     "@vue/cli-plugin-eslint": {
       "config": "prettier",
-      "lintOn": ["save"]
+      "lintOn": [
+        "save"
+      ]
     },
     "@vue/cli-plugin-unit-jest": {}
   },
@@ -219,7 +227,7 @@ and then run
 
 ![The standalone app](/vue-cli/cli-app-standalone.gif)
 
-You can serve more organized projects, composed by JavaScript and HTML files as well. Vue CLI by default uses main.js / index.js as its entry point, and you can have a package.json and any tool configuration set up. `vue serve` will pick it up.
+You can serve more organized projects, composed by JavaScript and HTML files as well. Vue CLI by default uses main.js / index.js  as its entry point, and you can have a package.json and any tool configuration set up. `vue serve` will pick it up.
 
 Since this uses global dependencies, it's not an optimal approach for anything more than demonstration or quick testing.
 
