@@ -1,4 +1,4 @@
-Components are single, independent units of an interface. They can have their own state, markup and style.
+Components are single, independent units of an interface. They can have their own state, markup, and style.
 
 ## How to use components
 
@@ -28,9 +28,9 @@ The fourth is in `.vue` files, also called **Single File Components**.
 
 Let's dive into the first 3 ways in details.
 
-Using `new Vue()` or `Vue.component()` is the standard way to use Vue when you're building an application that is not a Single Page Application (SPA), but rather uses Vue.js just in some pages, like in a contact form or in the shopping cart. Or maybe Vue is used in all pages, but the server is rendering the layout, and you serve the HTML to the client, which then loads the Vue application you build.
+Using `new Vue()` or `Vue.component()` is the standard way to use Vue when you're building an application that is not a Single Page Application (SPA) but rather uses Vue.js just in some pages, like in a contact form or in the shopping cart. Or maybe Vue is used in all pages, but the server is rendering the layout, and you serve the HTML to the client, which then loads the Vue application you build.
 
-In a SPA, where it's Vue that builds the HTML, it's more common to use Single File Components as they are more convenient.
+In an SPA, where it's Vue that builds the HTML, it's more common to use Single File Components as they are more convenient.
 
 You instantiate Vue by mounting it on a DOM element. If you have a `<div id="app"></div>` tag, you will use:
 
@@ -67,7 +67,7 @@ new Vue({
 <hr>
 </div>
 
-What are we doing? We are initializing a Vue root component on `#app`, and inside that we use the Vue component `user-name`, which abstracts our greeting to the user.
+What are we doing? We are initializing a Vue root component on `#app`, and inside that, we use the Vue component `user-name`, which abstracts our greeting to the user.
 
 The component accepts a prop, which is an attribute we use to pass data down to child components.
 
@@ -119,7 +119,7 @@ export default {
 
 ## Reusing a component
 
-A child component can be added multiple times. Each separate instance is independent from the others:
+A child component can be added multiple times. Each separate instance is independent of the others:
 
 ```html
 <div id="app">
