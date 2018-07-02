@@ -2,7 +2,7 @@ Components in Vue can communicate in various ways.
 
 ## Props
 
-The first way is using props.
+The first way is by using props.
 
 Parents "pass down" data by adding arguments to the component declaration:
 
@@ -84,7 +84,7 @@ export default {
 </script>
 ```
 
-and retrieve them in the parent:
+and retrieve them from the parent:
 
 ```html
 <template>
