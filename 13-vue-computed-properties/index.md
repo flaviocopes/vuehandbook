@@ -44,7 +44,7 @@ export default {
 </script>
 ```
 
-## An example of computed property
+## An example of a computed property
 
 Here's an example code that uses a computed property `count` to calculate the output. Notice:
 
@@ -123,4 +123,4 @@ export default {
 
 It will render once, and then it will not be updated even when the component re-renders. Just on a page refresh, when the Vue component is quit and reinitialized.
 
-In this case a method is better suited for your needs.
+In this case, a method is better suited for your needs.
