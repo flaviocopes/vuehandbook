@@ -48,11 +48,11 @@ export default {
 </style>
 ```
 
-All or this is possible thanks to the use of webpack. The Vue CLI makes this very easy and supported out of the box. `.vue` files cannot be used without a webpack setup, and as such they are not very suited to apps that just use Vue on a page without being a full-blown single-page app (SPA).
+All of this is possible thanks to the use of webpack. The Vue CLI makes this very easy and supported out of the box. `.vue` files cannot be used without a webpack setup, and as such, they are not very suited to apps that just use Vue on a page without being a full-blown single-page app (SPA).
 
 Since Single File Components rely on Webpack, we get for free the ability to use modern Web features.
 
-Your CSS can be defined using SCSS or Stylus, the template can be built using Pug, and all you need to do to make this happen is to declare to Vue which language preprocessor you are going to to use.
+Your CSS can be defined using SCSS or Stylus, the template can be built using Pug, and all you need to do to make this happen is to declare to Vue which language preprocessor you are going to use.
 
 The list of supported preprocessors include
 
@@ -104,7 +104,7 @@ export default {
 }
 ```
 
-in the component JavaScript to set up the data.
+in the component's JavaScript to set up the data.
 
 Other common ways you will see are
 
