@@ -12,7 +12,7 @@ Here's a breakdown of this question.
 - You need to compose new data from existing data sources
 - You have a variable you use in your template that's built from one or more data properties
 - You want to reduce a complicated, nested property name to a more readable and easy to use one, yet update it when the original property changes
-- You need to reference a value from the template. In this case creating a computed property is the best thing because it's cached.
+- You need to reference a value from the template. In this case, creating a computed property is the best thing because it's cached.
 - You need to listen to changes of more than one data property
 
 ## When to use watchers
