@@ -26,9 +26,9 @@ or it can be put into a Single File Component:
 </template>
 ```
 
-This first example is very basic. The next step is making it output a piece of the component state, for example a name.
+This first example is very basic. The next step is making it output a piece of the component state, for example, a name.
 
-This can be done using interpolation. First we add some data to our component:
+This can be done using interpolation. First, we add some data to our component:
 
 ```js
 new Vue({
