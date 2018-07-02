@@ -99,4 +99,4 @@ export default {
 
 We don't have to use `this.data.name`, just `this.name`. Vue does provide a transparent binding for us. Using `this.data.name` will raise an error.
 
-Methods are closely interlinked to events.
+As you saw before in the events description, methods are closely interlinked to events, because they are used as event handlers. Every time an event occurs, that method is called.
