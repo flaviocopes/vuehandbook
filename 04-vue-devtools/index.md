@@ -54,7 +54,7 @@ And when you visit a site that has a Vue instance running, it will become green,
 
 ## Install the standalone app
 
-Alternatively you can use the DevTools standalone app.
+Alternatively, you can use the DevTools standalone app.
 
 Simply install it using
 
@@ -88,7 +88,7 @@ inside the project `index.html` file, and wait for the app to be reloaded, and i
 
 ## How to use the Developer Tools
 
-As mentioned, the Vue DevTools can be activated by opening the Developer Tools in the browser, and moving to the Vue panel.
+As mentioned, the Vue DevTools can be activated by opening the Developer Tools in the browser and moving to the Vue panel.
 
 Another option is to right-click on any element in the page, and choose "Inspect Vue component":
 
@@ -100,7 +100,7 @@ When the Vue DevTools panel is open, we can navigate the components tree. When w
 
 On the top there are 4 buttons:
 
-- **Components** (the current panel), which lists all the component instances running in the current page. Vue can have multiple instances running at the same time, for example it might manage your shopping cart widget and the slideshow, with separate, lightweight apps.
+- **Components** (the current panel), which lists all the component instances running in the current page. Vue can have multiple instances running at the same time, for example, it might manage your shopping cart widget and the slideshow, with separate, lightweight apps.
 - **Vuex** is where you can inspect the state managed through Vuex.
 - **Events** shows all the events emitted
 - **Refresh** reloads the devtools panel
@@ -127,11 +127,11 @@ button and you can hover any component in the page with the mouse, click it, and
 
 ### Format components names
 
-You can choose to show components in camelCase or using dashes.
+You can choose to show components in camelCase or use dashes.
 
 ### Filter inspected data
 
-On the right panel you can type any word to filter the properties that don't match it.
+On the right panel, you can type any word to filter the properties that don't match it.
 
 ### Inspect DOM
 
