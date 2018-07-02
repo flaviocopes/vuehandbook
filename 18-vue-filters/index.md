@@ -63,11 +63,7 @@ Above you saw a simple example of a filter: `{{ name | fallback }}`.
 Filters can be chained, by repeating the pipe syntax:
 
 ```js
-{
-  {
-    ;name | fallback | capitalize
-  }
-}
+{{ name | fallback | capitalize }}
 ```
 
 This first applies the `fallback` filter, then the `capitalize` filter (which we didn't define, but try making one!).
