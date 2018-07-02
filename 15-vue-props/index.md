@@ -1,4 +1,4 @@
-## Define a prop inside the component
+Props are the way components can accept data from components that include them (parent components).
 
 When a component expects one or more prop, it must define them in its `props` property:
 
