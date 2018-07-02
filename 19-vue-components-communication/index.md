@@ -1,6 +1,6 @@
 Components in Vue can communicate in various ways.
 
-## Props
+## Using Props
 
 The first way is by using props.
 
@@ -29,7 +29,7 @@ Props are one-way: from parent to child. Any time the parent changes the prop, t
 
 The reverse is not true, and you should never mutate a prop inside the child component.
 
-## Events to communicate from children to parent
+## Using Events to communicate from children to parent
 
 Events allow you to communicate from the children up to the parent:
 
