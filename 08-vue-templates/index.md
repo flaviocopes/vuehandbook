@@ -87,29 +87,14 @@ While in those templating engines they are "dumb", in Vue, you can do much more,
 You can use **any JavaScript expression** inside your interpolations, but you're limited to just one expression:
 
 ```js
-{
-  {
-    name.reverse()
-  }
-}
-```
-
-```js
-{
-  {
-    name === 'Flavio' ? 'Flavio' : 'stranger'
-  }
-}
+{{ name.reverse() }}
+{{ name === 'Flavio' ? 'Flavio' : 'stranger' }}
 ```
 
 Vue provides access to some global objects inside templates, including Math and Date, so you can use them:
 
 ```js
-{
-  {
-    Math.sqrt(16) * Math.random()
-  }
-}
+{{ Math.sqrt(16) * Math.random() }}
 ```
 
 It's best to avoid adding complex logic to templates, but the fact Vue allows it gives us more flexibility, especially when trying things out.
