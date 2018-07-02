@@ -7,12 +7,11 @@ Its job is to share data across the components of your application.
 Components in Vue.js out of the box can communicate using
 
 - **props**, to pass state down to child components from a parent
-- **events**, to change the state of a parent component from a child
-- use events between components that don't have a child-parent relationship is still possible using custom events (using `$emit` and `$on`)
+- **events**, to change the state of a parent component from a child, or using the root component as an event bus
 
 Sometimes things get more complex than what these simple options allow.
 
-In this case a good option is to centralize the state in a single store. This is what Vuex does.
+In this case, a good option is to centralize the state in a single store. This is what Vuex does.
 
 ## Why should you use Vuex
 
@@ -25,7 +24,7 @@ Vuex borrowed many of its ideas from the React ecosystem, as this is the Flux pa
 If you know Flux or Redux already, Vuex will be very familiar.
 If you don't, no problem - I'll explain every concept from the ground up.
 
-Components in a Vue application can have their own state. For example an input box will store the data entered into it locally. This is perfectly fine, and components can have local state even when using Vuex.
+Components in a Vue application can have their own state. For example, an input box will store the data entered into it locally. This is perfectly fine, and components can have local state even when using Vuex.
 
 You know that you need something like Vuex when you start doing a lot of work to pass a piece of state around.
 
@@ -37,7 +36,7 @@ Using Vuex will introduce some complexity into the application, as things need t
 
 ## Let's start
 
-In this example I'm starting from a Vue CLI application. Vuex can be used also by directly loading it into a script tag, but since Vuex is more in tune with bigger applications, it's much more likely you will use it on a more structured application, like the ones you can start up quickly with the Vue CLI.
+In this example, I'm starting from a Vue CLI application. Vuex can be used also by directly loading it into a script tag, but since Vuex is more in tune with bigger applications, it's much more likely you will use it on a more structured application, like the ones you can start up quickly with the Vue CLI.
 
 The examples I use will be put CodeSandbox, which is a great service that has a Vue CLI sample ready to go at <https://codesandbox.io/s/vue>. I recommend using it to play around.
 
@@ -74,7 +73,7 @@ We export a Vuex store object, which we create using the `Vuex.Store()` API.
 
 Now that we have a skeleton in place, let's come up with an idea for a good use case for Vuex, so I can introduce its concepts.
 
-For example I have 2 sibling components, one with an input field, and one that prints that input field content.
+For example, I have 2 sibling components, one with an input field, and one that prints that input field content.
 
 When the input field is changed, I want to also change the content in that second component. Very simple but this will do the job for us.
 
@@ -127,7 +126,7 @@ export default {
 
 ## Add the state to the store
 
-So with this in place we go back to the store.js file and we add a property to the store called `state`, which is an object, that contains the `flavor` property. That's an empty string initially.
+So with this in place, we go back to the store.js file and we add a property to the store called `state`, which is an object, that contains the `flavor` property. That's an empty string initially.
 
 ```js
 import Vue from 'vue'
@@ -191,11 +190,11 @@ export const store = new Vuex.Store({
 })
 ```
 
-Notice how getters is an object. `flavor` is a property of this object, which accepts the state as the parameter, and returns the `flavor` property of the state.
+Notice how `getters` is an object. `flavor` is a property of this object, which accepts the state as the parameter, and returns the `flavor` property of the state.
 
 ## Adding the Vuex store to the app
 
-Now the store is ready to be used. We go back to our application code, and in the main.js file we need to import the state, and make it available in our Vue app.
+Now the store is ready to be used. We go back to our application code, and in the main.js file, we need to import the state and make it available in our Vue app.
 
 We add
 
@@ -222,7 +221,7 @@ Let's update the state when the user types something.
 
 We do so by using the `store.commit()` API.
 
-But first let's create a method that is invoked when the input content changes. We use `@input` rather than `@change`, because the latter is only triggered when the focus is moved away from the input box, while `@input` is called on every keypress.
+But first, let's create a method that is invoked when the input content changes. We use `@input` rather than `@change` because the latter is only triggered when the focus is moved away from the input box, while `@input` is called on every keypress.
 
 ```js
 <template>
