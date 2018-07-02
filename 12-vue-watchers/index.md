@@ -65,4 +65,4 @@ export default {
 </script>
 ```
 
-Watchers cannot be looked up from a template, like you can with computed properties.
+Watchers cannot be looked up from a template as you can with computed properties.
