@@ -1,8 +1,8 @@
 ## Introduction
 
-In a JavaScript web application, a router is the part that syncs the current displayed view with the browser address bar content.
+In a JavaScript web application, a router is the part that syncs the currently displayed view with the browser address bar content.
 
-In other words, it's the part that makes the URL change when you click something in the page, and also helps showing the correct view when you hit a specific URL.
+In other words, it's the part that makes the URL change when you click something in the page, and helps to show the correct view when you hit a specific URL.
 
 Traditionally the Web is built around URLs. When you hit a certain URL, a specific page is displayed.
 
@@ -12,7 +12,7 @@ You need a router when you need to sync URLs to views in your app. It's a very c
 
 The Vue Router library is the way to go for Vue.js applications. Vue does not enforce the use of this library. You can use whatever generic routing library you want, or also create your own History API integration, but the benefit of using Vue Router is that it's **official**.
 
-This means it's maintained by the same people that maintain Vue, so you get a more consistent integration in the framework, and the guarantee that it's always going to be compatible in the future, no matter what.
+This means it's maintained by the same people who maintain Vue, so you get a more consistent integration in the framework, and the guarantee that it's always going to be compatible in the future, no matter what.
 
 ## Installation
 
@@ -60,7 +60,7 @@ We can make the app navigate to a new route using
 
 which resemble the `pushState`, `replaceState` and `go` methods of the History API.
 
-`push()` is used to go to a new route, adding a new item to the browser history. `replace()` is identical in usage, except it does not push a new state to the history.
+`push()` is used to go to a new route, adding a new item to the browser history. `replace()` is the same, except it does not push a new state to the history.
 
 Usage samples:
 
@@ -82,7 +82,7 @@ this.$router.go(1) //go forward 1 step
 
 I'm using a Vue Single File Component in this example.
 
-In the template I use a `nav` tag that contains 3 `router-link` components, which have a label (Home/Login/About) and a URL assigned through the `to` attribute.
+In the template I use a `nav` tag that has 3 `router-link` components, which have a label (Home/Login/About) and a URL assigned through the `to` attribute.
 
 The `router-view` component is where the Vue Router will put the content that matches the current URL.
 
@@ -142,7 +142,7 @@ new Vue({
 
 
 
-Usually in a Vue app, you instantiate and mount the root app using:
+Usually, in a Vue app you instantiate and mount the root app using:
 
 ```js
 new Vue({
@@ -150,7 +150,7 @@ new Vue({
 }).$mount('#app')
 ```
 
-When using the Vue Router, you don't pass a `render` property, but instead you use `router`.
+When using the Vue Router, you don't pass a `render` property but instead, you use `router`.
 
 The syntax used in the above example:
 
@@ -168,13 +168,13 @@ new Vue({
 }).$mount('#app')
 ```
 
-See, in the example we pass a `routes` array to the `VueRouter` constructor. Each route in this array has a `path` and `component` params.
+See in the example, we pass a `routes` array to the `VueRouter` constructor. Each route in this array has a `path` and `component` params.
 
 If you pass a `name` param too, you have a **named route**.
 
 ## Using named routes to pass parameters to the router push and replace methods
 
-Remember how we used the Router object to push a new state previously?
+Remember how we used the Router object to push a new state before?
 
 ```js
 this.$router.push({ path: 'about' })
@@ -196,13 +196,13 @@ this.$router.replace({ name: 'post', params: { post_slug: 'hello-world' } })
 
 The application will render the route component that matches the URL passed to the link.
 
-The new route component that handle the URL is instantiated and its guards called, and the old route component will be destroyed.
+The new route component that handles the URL is instantiated and its guards called, and the old route component will be destroyed.
 
 ## Route guards
 
 Since we mentioned **guards**, let's introduce them.
 
-You can think of them of lifecycle hooks or middleware, those are functions called at specific times during the execution of the application. You can jump in and alter the execution of a route, redirecting or simply cancelling the request.
+You can think of them of life cycle hooks or middleware, those are functions called at specific times during the execution of the application. You can jump in and alter the execution of a route, redirecting or simply canceling the request.
 
 You can have global guards by adding a callback to the `beforeEach()` and `afterEach()` property of the router.
 
@@ -245,7 +245,7 @@ We mentioned navigation. To determine if the navigation to a route is confirmed,
 - if all was fine, the navigation is confirmed!
 - it calls the router `afterEach()` guard
 
-You can use the route-specific guards (`beforeRouteEnter` and `beforeRouteUpdate` in case of dynamic routing) as lifecycle hooks, so you can start **data fetching requests** for example.
+You can use the route-specific guards (`beforeRouteEnter` and `beforeRouteUpdate` in case of dynamic routing) as life cycle hooks, so you can start **data fetching requests** for example.
 
 ## Dynamic routing
 
@@ -308,7 +308,7 @@ In the case of dynamic routes, what happens is a little different.
 
 Vue to be more efficient instead of destroying the current route component and re-instantiating it, it reuses the current instance.
 
-When this happens, Vue calls the `beforeRouteUpdate` lifecycle event. There you can perform any operation you need:
+When this happens, Vue calls the `beforeRouteUpdate` life cycle event. There you can perform any operation you need:
 
 ```js
 const Post = {
@@ -322,7 +322,7 @@ const Post = {
 
 ## Using props
 
-In the examples up to now I used `$route.params.*` to access the route data. A component should not be so tightly coupled with the router, and instead we can use props:
+In the examples, I used `$route.params.*` to access the route data. A component should not be so tightly coupled with the router, and instead, we can use props:
 
 ```js
 const Post = {
