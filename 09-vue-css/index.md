@@ -99,7 +99,7 @@ body {
 </style>
 ```
 
-You can hardcode the class like in the above example, or you can bind the class to a component property, to make it dynamic, and only apply that class if the data property is true:
+You can hardcode the class like in the above example, or you can bind the class to a component property, to make it dynamic, and only apply to that class if the data property is true:
 
 ```html
 <template>
@@ -143,7 +143,7 @@ export default {
 </style>
 ```
 
-You can assign multiple classes either adding two classes to `paragraphClass` in this case, or by using an array:
+You can assign multiple classes either adding two classes to `paragraphClass` in this case or by using an array:
 
 ```html
 <template>
@@ -215,7 +215,7 @@ export default {
 </style>
 ```
 
-You can also use a computed property that returns an object, which works best when you have many CSS classes to add at the same element:
+You can also use a computed property that returns an object, which works best when you have many CSS classes to add to the same element:
 
 ```html
 <template>
