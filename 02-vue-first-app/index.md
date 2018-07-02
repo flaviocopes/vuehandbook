@@ -23,9 +23,9 @@ You create an HTML file which contains
 </html>
 ```
 
-and you open it in the browser. That's your first Vue app! The page should show an "Hello World!" message.
+and you open it in the browser. That's your first Vue app! The page should show a "Hello World!" message.
 
-I put the script tags at the end of the body, so that they are executed in order after the DOM is loaded.
+I put the script tags at the end of the body so that they are executed in order after the DOM is loaded.
 
 What this code does is, we instantiate a new Vue app, linked to the `#example` element as its template (it's defined using a CSS selector usually, but you can also pass in an HTMLElement).
 
@@ -53,7 +53,7 @@ There are two ways you can get this application.
 
 ### Use the Vue CLI locally
 
-The first is to install the Vue CLI on your computer, and run the command
+The first is to install the Vue CLI on your computer and run the command
 
 ```bash
 vue create <enter the app name>
@@ -71,7 +71,7 @@ Whether you chose to use the Vue CLI locally, or through CodeSandbox, let's insp
 
 ### The files structure
 
-Beside `package.json`, which contains the configuration and the these are the files contained in the initial project structure:
+Beside `package.json`, which contains the configuration, these are the files contained in the initial project structure:
 
 - `index.html`
 - `src/App.vue`
@@ -105,13 +105,13 @@ In the body it includes just one simple element: `<div id="app"></div>`. This is
 
 #### `src/main.js`
 
-This is the main JavaScript files that drives our app.
+This is the main JavaScript files that drive our app.
 
-We first import the Vue library, and the App component from `App.vue`.
+We first import the Vue library and the App component from `App.vue`.
 
 We set productionTip to false, just to avoid Vue to output a "_you're in development mode_" tip in the console.
 
-Next we create the Vue instance, by assigning it to the DOM element identified by `#app`, which we defined in `index.html`, and we tell it to use the App component.
+Next, we create the Vue instance, by assigning it to the DOM element identified by `#app`, which we defined in `index.html`, and we tell it to use the App component.
 
 ```js
 // The Vue build version to load with the `import` command
@@ -131,7 +131,7 @@ new Vue({
 
 #### `src/App.vue`
 
-`App.vue` is a Single File Component. It contains 3 chunks of code: HTML, CSS and JavScript.
+`App.vue` is a Single File Component. It contains 3 chunks of code: HTML, CSS and JavaScript.
 
 This might seem weird at first, but Single File Components are a great way to create self-contained components that have all they need in a single file.
 
