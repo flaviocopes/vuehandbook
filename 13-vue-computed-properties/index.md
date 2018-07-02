@@ -1,4 +1,4 @@
-## What are Vue.js Computed Properties
+## What is a Computed Property
 
 In Vue.js you can output any data value using parentheses:
 
