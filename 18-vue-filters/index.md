@@ -47,15 +47,15 @@ export default {
 
 Notice the syntax to apply a filter, which is `| filterName`. If you're familiar with Unix, that's the Unix pipe operator, which is used to pass the output of an operation as an input to the next one.
 
-The `filters` property of the component is an object. A single filter is a function that accepts a value, and returns another value.
+The `filters` property of the component is an object. A single filter is a function that accepts a value and returns another value.
 
-The returned value is the one that's actually printed in the the Vue.js template.
+The returned value is the one that's actually printed in the Vue.js template.
 
-The filter of course has access to the component data and methods.
+The filter, of course, has access to the component data and methods.
 
 What's a good use case for filters?
 
-- transforming a string, for example capitalizing or making it lowercase
+- transforming a string, for example, capitalizing or making it lowercase
 - formatting a price
 
 Above you saw a simple example of a filter: `{{ name | fallback }}`.
@@ -99,6 +99,6 @@ If you pass parameters to a filter, the first one passed to the filter function 
 
 You can use multiple parameters by separating them using a comma.
 
-Notice I used an arrow function. We avoid arrow function in methods and computed properties generally, because they almost always reference `this` to access the component data, but in this case the filter does not need to access this, but receives all the data it needs through the parameters, and we can safely use the simpler arrow function syntax.
+Notice I used an arrow function. We avoid arrow function in methods and computed properties generally because they almost always reference `this` to access the component data, but in this case, the filter does not need to access this but receives all the data it needs through the parameters, and we can safely use the simpler arrow function syntax.
 
 [This package](https://www.npmjs.com/package/vue2-filters) has a lot of pre-made filters for you to use directly in templates, which include `capitalize`, `uppercase`, `lowercase`, `placeholder`, `truncate`, `currency`, `pluralize` and more.
