@@ -40,7 +40,7 @@ Methods are especially useful when you need to perform an action and you attach 
 
 Methods can accept parameters.
 
-In this case you just pass the parameter in the template, and you
+In this case, you just pass the parameter in the template, and you
 
 ```html
 <template>
