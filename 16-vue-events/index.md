@@ -2,7 +2,7 @@
 
 Vue.js allows us to intercept any DOM event by using the `v-on` directive on an element.
 
-If we want to do something when a click event happens on this element:
+If we want to do something when a click event happens in this element:
 
 ```html
 <template>
@@ -46,7 +46,7 @@ What you need to know here is that you can pass parameters from events: `@click=
 
 ## Access the original event object
 
-In many cases you will want to perform an action to the event object, or look up some property in it. How can you access it?
+In many cases, you will want to perform an action on the event object or look up some property in it. How can you access it?
 
 Use the special `$event` directive:
 
