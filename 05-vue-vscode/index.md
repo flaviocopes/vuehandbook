@@ -1,6 +1,6 @@
-Visual Studio Code is one of the most used code editors in the world right now. Editors have, like many software products, a cycle. Once TextMate was the favorite by developers, then it was Sublime Text, now it's VS Code.
+Visual Studio Code is one of the most used code editors in the world right now. Editors have, like many software products, a cycle. Once TextMate was the favorite among developers, then it was Sublime Text, now it's VS Code.
 
-The cool thing about being popular is that people dedicate a lot of time into building plugins for everything they imagine.
+The cool thing about being popular is that people dedicate a lot of time to building plugins for everything they imagine.
 
 One of such plugins is an awesome tool that can help us Vue.js developers.
 
