@@ -227,6 +227,8 @@ export default {
 <a @:click="handleClick">Click me!</a>
 ```
 
+> More details on v-on in the Events section
+
 ## Show or hide
 
 You can choose to only show an element in the DOM if a particular property of the Vue instance evaluates to true, using `v-show`:
