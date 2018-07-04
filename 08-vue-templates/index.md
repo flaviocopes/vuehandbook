@@ -2,8 +2,6 @@ Vue.js uses a templating language that's a superset of HTML.
 
 Any HTML is a valid Vue.js template, and in addition to that, Vue.js provides two powerful things: **interpolation** and **directives**.
 
-I'm going to detail interpolation in this article, and make a new one tomorrow for directives.
-
 This is a valid Vue.js template:
 
 ```html
