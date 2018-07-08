@@ -37,11 +37,11 @@ In the template, the special `{{ }}` tag indicates that's some part of the templ
 
 You can see this example on Codepen: <https://codepen.io/flaviocopes/pen/YLoLOp>
 
-![Codepen](/vue-first-app/codepen.png)
+![Codepen](codepen.png)
 
 Codepen is a little different from using a plain HTML file, and you need to configure it to point to the Vue library location in the Pen settings:
 
-![Pen settings](/vue-first-app/pen-settings.png)
+![Pen settings](pen-settings.png)
 
 ## Second example: the Vue CLI default app
 
@@ -320,4 +320,4 @@ a {
 
 CodeSandbox has a cool preview functionality. You can run the app and edit anything in the source to have it immediately reflected in the preview.
 
-![The Vue App](/vue-first-app/vue-app.png)
+![The Vue App](vue-app.png)

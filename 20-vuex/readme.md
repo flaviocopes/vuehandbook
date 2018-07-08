@@ -40,7 +40,7 @@ In this example, I'm starting from a Vue CLI application. Vuex can be used also 
 
 The examples I use will be put CodeSandbox, which is a great service that has a Vue CLI sample ready to go at <https://codesandbox.io/s/vue>. I recommend using it to play around.
 
-![CodeSandbox](/vuex/codesandbox.png)
+![CodeSandbox](codesandbox.png)
 
 Once you're there, click the **Add dependency** button, enter "vuex" and click it.
 
@@ -65,7 +65,7 @@ Vue.use(Vuex)
 export const store = new Vuex.Store({})
 ```
 
-![Vuex store](/vuex/vuex-store.png)
+![Vuex store](vuex-store.png)
 
 We export a Vuex store object, which we create using the `Vuex.Store()` API.
 

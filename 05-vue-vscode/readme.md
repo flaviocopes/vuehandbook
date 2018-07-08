@@ -8,17 +8,17 @@ One of such plugins is an awesome tool that can help us Vue.js developers.
 
 It's called **Vetur**, it's hugely popular, with more than 3 million downloads, and you can find it [on the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=octref.vetur).
 
-![Vetur marketplace page](/vue-vscode/vetur-marketplace-page.png)
+![Vetur marketplace page](vetur-marketplace-page.png)
 
 ## Installing Vetur
 
 Clicking the Install button will trigger the installation panel in VS Code:
 
-![Install Vetur in VS Code](/vue-vscode/vetur-install.png)
+![Install Vetur in VS Code](vetur-install.png)
 
 You can also simply open the Extensions in VS Code and search for "vetur":
 
-![Search vetur in extensions](/vue-vscode/search-vetur-extensions.png)
+![Search vetur in extensions](search-vetur-extensions.png)
 
 What does this extension provide?
 
@@ -28,11 +28,11 @@ Vetur provides syntax highlighting for all your Vue source code files.
 
 Without Vetur, a .vue file will be displayed in this way by VS Code:
 
-![Vue file without Vetur](/vue-vscode/vue-file-without-vetur.png)
+![Vue file without Vetur](vue-file-without-vetur.png)
 
 with Vetur installed:
 
-![Vue file with Vetur](/vue-vscode/vue-file-with-vetur.png)
+![Vue file with Vetur](vue-file-with-vetur.png)
 
 VS Code is able to recognize the type of code contained in a file from its extension.
 
@@ -63,7 +63,7 @@ Vetur provides VS Code the ability to use your favorite snippets in Single File 
 
 IntelliSense is also enabled bye Vetur, for each different language, with autocomplete:
 
-![Autocomplete](/vue-vscode/autocomplete.png)
+![Autocomplete](autocomplete.png)
 
 ## Scaffolding
 
@@ -113,15 +113,15 @@ the others are specific and create a single block of code.
 
 Emmet, the popular HTML/CSS abbreviations engine, is supported by default. You can type one of the Emmet abbreviations and by pressing `tab` VS Code will automatically expand it to the HTML equivalent:
 
-![Emmet support](/vue-vscode/emmet.gif)
+![Emmet support](emmet.gif)
 
 ## Linting and error checking
 
 Vetur integrates with ESLint, through the [VS Code ESLint plugin](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
-![ESLint configuration](/vue-vscode/eslint-configuration.png)
+![ESLint configuration](eslint-configuration.png)
 
-![ESLint at work](/vue-vscode/eslint-hint.png)
+![ESLint at work](eslint-hint.png)
 
 ## Code Formatting
 
